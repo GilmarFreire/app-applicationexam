@@ -8,6 +8,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
        
   },
+  button: {
+    
+    margin: 10,
+    width: 350,
+    borderRadius: 25,
+    padding:10     
+  },
+
+  icon: {
+    margin: 30
+  }
+
 });
 
 export default styles

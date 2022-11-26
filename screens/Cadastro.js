@@ -6,10 +6,12 @@ import styles from '../styles/MainStyle';
 
 
 //Title da Home
-export default function Login({navigation}){
+export default function Cadastro({navigation}){
 
 const [email, setEmail] = useState(null)
 const [password, setPassword] = useState(null)
+
+
 
 const entrar = () => {
   navigation.reset({
@@ -23,24 +25,15 @@ const cadastrar = () => {
 }
 
     return(
-
-        
         <View style={styles.container}>
-            <Text h3>Epistemic</Text>
+            <Text h3>Cadastre-se</Text>
                 <Input
                     placeholder="Entre com seu E-mail"
                     leftIcon={{ type: 'font-awesome', name: 'envelope' }}
                     onChangeText={value => setEmail(value)}
                     keyboardType='email-address'
                 />
-
-                <Input
-                    placeholder="Digite sua senha para entrar"
-                    leftIcon={{ type: 'font-awesome', name: 'key' }}
-                    onChangeText={value => setPassword(value)}
-                    secureTextEntry={true}
-                />
-
+                
                 <Button
                     icon={
                         <Icon 
@@ -52,20 +45,6 @@ const cadastrar = () => {
                     title="Entrar"
                     buttonStyle={styles.button}
                     onPress={() => entrar()}
-                />
-
-                <Button
-                    icon={
-                        
-                        <Icon 
-                            name="user"
-                            size={15}
-                            color="white"
-                        />                        
-                    }
-                    title="Não tem Cadastro? Cadastre-se"
-                    buttonStyle={styles.button}
-                    onPress={() => cadastrar()}
                 />
           </View>
     );
