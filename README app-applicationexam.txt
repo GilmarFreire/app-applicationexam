@@ -18,6 +18,8 @@ npm install @react-navigation/native-stack --save
 npx expo install react-native-gesture-handler
 npx expo install @react-native-masked-view/masked-view
 npm install @react-navigation/stack
+npm install @react-navigation/bottom-tabs
+npm install react-native-masked-text --save
 
 
 iniciando o projeto

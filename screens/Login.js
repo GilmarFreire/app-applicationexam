@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { View } from "react-native";
+import { A } from '@expo/html-elements';
 import { Button, Input, Text } from 'react-native-elements';
 import Icon  from 'react-native-vector-icons/FontAwesome';
 import styles from '../styles/MainStyle';
+
 
 
 //Title da Home
@@ -46,6 +48,10 @@ const cadastrar = () => {
     navigation.navigate("Cadastro")
 }
 
+const navTermosUso = () => {
+    navigation.navigate("TermosDeUso")
+}
+
     return(        
         <View style={styles.container}>
             <Text h3>Epistemic</Text>
@@ -82,21 +88,16 @@ const cadastrar = () => {
                     title="Entrar"
                     buttonStyle={styles.button}
                     onPress={() => entrar()}
-                />
+                />          
+                
+                <View>
+                    <A onPress={() => cadastrar()} >Não tem uma conta? Cadastre-se</A>
+                </View>
 
-                <Button
-                    icon={
-                        
-                        <Icon 
-                            name="user"
-                            size={15}
-                            color="white"
-                        />                        
-                    }
-                    title="Não tem Cadastro? Cadastre-se"
-                    buttonStyle={styles.button}
-                    onPress={() => cadastrar()}
-                />
+                <View>
+                <A onPress={() => navTermosUso()} >Termos de Uso</A>
+                </View>
           </View>
+          
     );
 }

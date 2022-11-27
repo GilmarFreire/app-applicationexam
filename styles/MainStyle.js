@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { color } from "react-native-elements/dist/helpers";
 
 const styles = StyleSheet.create({
   container: {
@@ -18,7 +19,15 @@ const styles = StyleSheet.create({
 
   icon: {
     margin: 30
+  },
+
+  paragraph: {
+    margin: 10, 
+    color: 'red'
   }
+
+
+  
 
 });
 
