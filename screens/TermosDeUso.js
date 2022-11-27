@@ -5,13 +5,10 @@ import styles from "../styles/MainStyle";
 
 export default function TermosDeUso() {
     return(
-        <View>            
+        <View style={styles.containerTermos}>            
             
-            <Text><H2 style={styles.paragraph}>Política Privacidade</H2></Text>
-            <Text>
-            
-            
-            
+            <Text style={styles.tituloTermos}><H2>Política Privacidade</H2></Text>
+            <Text style={styles.paragraphTermos}>
             <P >A sua privacidade é importante para nós. É política do app-applicationExam respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <A href="http://localhost:19000">app-applicationExam</A>, e outros sites que possuímos e operamos.</P>
             <P> Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado. </P> 
             <P>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</P> <P>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</P>

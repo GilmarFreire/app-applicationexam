@@ -54,6 +54,7 @@ const navTermosUso = () => {
 
     return(        
         <View style={styles.container}>
+            
             <Text h3>Epistemic</Text>
             <Input 
                     placeholder="Digite um email valido"
@@ -91,11 +92,11 @@ const navTermosUso = () => {
                 />          
                 
                 <View>
-                    <A onPress={() => cadastrar()} >Não tem uma conta? Cadastre-se</A>
+                    <A  onPress={() => cadastrar()} >Não tem uma conta? Cadastre-se</A>
                 </View>
 
-                <View>
-                <A onPress={() => navTermosUso()} >Termos de Uso</A>
+                <View style={styles.footer}>
+                <A style={styles.footerText} onPress={() => navTermosUso()} >Termos de Uso</A>
                 </View>
           </View>
           
