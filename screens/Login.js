@@ -54,6 +54,7 @@ const navTermosUso = () => {
 
     return(        
         <View style={styles.container}>
+             
             
             <Text h3>Epistemic</Text>
             <Input 
