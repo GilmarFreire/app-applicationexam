@@ -20,6 +20,12 @@ npx expo install @react-native-masked-view/masked-view
 npm install @react-navigation/stack
 npm install @react-navigation/bottom-tabs
 npm install react-native-masked-text --save
+npx expo install @expo/html-elements
+npx expo install expo-linear-gradient
+npx expo install styled-components
+npm install -g sharp-cli
+npx expo prebuild
+
 
 
 iniciando o projeto
@@ -34,5 +40,7 @@ npm install -g eas-cli
 configure o projeto
 eas build:configure
 apos alterar o arquivo eas.json
-eas update --branch preview --message "Update the app"
+eas.build para a loja de aplicativos e...
+eas build -p android --profile preview
+para gerar o apk
 
